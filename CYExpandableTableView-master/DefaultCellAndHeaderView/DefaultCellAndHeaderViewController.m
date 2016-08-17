@@ -49,6 +49,9 @@
 - (void)installTableView{
     CYExpandableTableViewController *tbvc = [CYExpandableTableViewController new];
 //    tbvc.selectedHeaderFillColor = [UIColor orangeColor];
+//    tbvc.selectedHeaderTextColor = [UIColor greenColor];
+//    tbvc.normalHeaderFillColor = [UIColor blackColor];
+//    tbvc.normalHeaderTextColor = [UIColor whiteColor];
     
     tbvc.tableViewDelegate = self;
     
