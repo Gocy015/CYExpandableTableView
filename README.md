@@ -73,7 +73,7 @@ To learn more about setting the table view's header or cell to your custom view 
 
 2.Set the expandable table view object's cellDataSource to your controlling object.
 
-3.Since you use a custom header view ,in your data model ,you no longer need to implement `-(NSString *)descriptionForSecondaryObjects;` in `ExpandableObjectProtocol.h`
+3.Since you use a custom cell ,in your data model ,you no longer need to implement `-(NSString *)descriptionForSecondaryObjects;` in `ExpandableObjectProtocol.h`
 
 
 
