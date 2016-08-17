@@ -1,0 +1,5 @@
+target 'CYExpandableTableView-master' do
+
+pod 'Masonry'
+
+end

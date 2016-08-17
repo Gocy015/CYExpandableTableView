@@ -7,25 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A22218E066AB93094D6CAF9 /* libPods-CYExpandableTableView-master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 406ABBB20453BB492FAB32BA /* libPods-CYExpandableTableView-master.a */; };
 		C32E27971D62BEA900F1B40A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27961D62BEA900F1B40A /* main.m */; };
 		C32E279A1D62BEA900F1B40A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27991D62BEA900F1B40A /* AppDelegate.m */; };
-		C32E279D1D62BEA900F1B40A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E279C1D62BEA900F1B40A /* ViewController.m */; };
 		C32E27A01D62BEA900F1B40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32E279E1D62BEA900F1B40A /* Main.storyboard */; };
 		C32E27A21D62BEA900F1B40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32E27A11D62BEA900F1B40A /* Assets.xcassets */; };
 		C32E27A51D62BEA900F1B40A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32E27A31D62BEA900F1B40A /* LaunchScreen.storyboard */; };
+		C32E27B41D62BEF800F1B40A /* ClickableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27AE1D62BEF800F1B40A /* ClickableHeaderView.m */; };
+		C32E27B51D62BEF800F1B40A /* CYExpandableTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32E27B11D62BEF800F1B40A /* CYExpandableTableView.xib */; };
+		C32E27B61D62BEF800F1B40A /* CYExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27B31D62BEF800F1B40A /* CYExpandableTableViewController.m */; };
+		C32E27C51D62C1C200F1B40A /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27C41D62C1C200F1B40A /* NSArray+Map.m */; };
+		C32E27D21D62C3D800F1B40A /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27CF1D62C3D800F1B40A /* Child.m */; };
+		C32E27D31D62C3D800F1B40A /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27D11D62C3D800F1B40A /* Parent.m */; };
+		C32E27D61D62C3F500F1B40A /* DefaultCellAndHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27D51D62C3F500F1B40A /* DefaultCellAndHeaderViewController.m */; };
+		C32E27D91D62C8B400F1B40A /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27D81D62C8B400F1B40A /* MainTableViewController.m */; };
+		C32E27E01D62EB4A00F1B40A /* CustomCellAndHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27DF1D62EB4A00F1B40A /* CustomCellAndHeaderViewController.m */; };
+		C32E27EA1D631B5D00F1B40A /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27E91D631B5D00F1B40A /* CustomHeader.m */; };
+		C339375B1D63FF5700B08577 /* Poster.m in Sources */ = {isa = PBXBuildFile; fileRef = C339375A1D63FF5700B08577 /* Poster.m */; };
+		C339375E1D63FF5E00B08577 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = C339375D1D63FF5E00B08577 /* Detail.m */; };
+		C33937701D640F7400B08577 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = C339376F1D640F7400B08577 /* UIImage+Crop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		406ABBB20453BB492FAB32BA /* libPods-CYExpandableTableView-master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYExpandableTableView-master.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		418C95E85D88E6B892813822 /* Pods-CYExpandableTableView-master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYExpandableTableView-master.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYExpandableTableView-master/Pods-CYExpandableTableView-master.debug.xcconfig"; sourceTree = "<group>"; };
+		C016AE2AEDA881499B0CE6B9 /* Pods-CYExpandableTableView-master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYExpandableTableView-master.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYExpandableTableView-master/Pods-CYExpandableTableView-master.release.xcconfig"; sourceTree = "<group>"; };
 		C32E27921D62BEA900F1B40A /* CYExpandableTableView-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CYExpandableTableView-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32E27961D62BEA900F1B40A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C32E27981D62BEA900F1B40A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C32E27991D62BEA900F1B40A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C32E279B1D62BEA900F1B40A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C32E279C1D62BEA900F1B40A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C32E279F1D62BEA900F1B40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C32E27A11D62BEA900F1B40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32E27A41D62BEA900F1B40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32E27A61D62BEA900F1B40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32E27AD1D62BEF800F1B40A /* ClickableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableHeaderView.h; sourceTree = "<group>"; };
+		C32E27AE1D62BEF800F1B40A /* ClickableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableHeaderView.m; sourceTree = "<group>"; };
+		C32E27AF1D62BEF800F1B40A /* CustomExpandableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomExpandableViewProtocol.h; sourceTree = "<group>"; };
+		C32E27B01D62BEF800F1B40A /* ExpandableObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableObjectProtocol.h; sourceTree = "<group>"; };
+		C32E27B11D62BEF800F1B40A /* CYExpandableTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYExpandableTableView.xib; sourceTree = "<group>"; };
+		C32E27B21D62BEF800F1B40A /* CYExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYExpandableTableViewController.h; sourceTree = "<group>"; };
+		C32E27B31D62BEF800F1B40A /* CYExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYExpandableTableViewController.m; sourceTree = "<group>"; };
+		C32E27C31D62C1C200F1B40A /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		C32E27C41D62C1C200F1B40A /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		C32E27CE1D62C3D800F1B40A /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		C32E27CF1D62C3D800F1B40A /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		C32E27D01D62C3D800F1B40A /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
+		C32E27D11D62C3D800F1B40A /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
+		C32E27D41D62C3F500F1B40A /* DefaultCellAndHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultCellAndHeaderViewController.h; sourceTree = "<group>"; };
+		C32E27D51D62C3F500F1B40A /* DefaultCellAndHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultCellAndHeaderViewController.m; sourceTree = "<group>"; };
+		C32E27D71D62C8B400F1B40A /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		C32E27D81D62C8B400F1B40A /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		C32E27DE1D62EB4A00F1B40A /* CustomCellAndHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellAndHeaderViewController.h; sourceTree = "<group>"; };
+		C32E27DF1D62EB4A00F1B40A /* CustomCellAndHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellAndHeaderViewController.m; sourceTree = "<group>"; };
+		C32E27E81D631B5D00F1B40A /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
+		C32E27E91D631B5D00F1B40A /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
+		C33937591D63FF5700B08577 /* Poster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Poster.h; sourceTree = "<group>"; };
+		C339375A1D63FF5700B08577 /* Poster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poster.m; sourceTree = "<group>"; };
+		C339375C1D63FF5E00B08577 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		C339375D1D63FF5E00B08577 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
+		C339376E1D640F7400B08577 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		C339376F1D640F7400B08577 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +74,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A22218E066AB93094D6CAF9 /* libPods-CYExpandableTableView-master.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		226C3BCB9A6EEB8AE93469F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				418C95E85D88E6B892813822 /* Pods-CYExpandableTableView-master.debug.xcconfig */,
+				C016AE2AEDA881499B0CE6B9 /* Pods-CYExpandableTableView-master.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C32E27891D62BEA900F1B40A = {
 			isa = PBXGroup;
 			children = (
+				C32E27AC1D62BEF800F1B40A /* CYExpandableTableView */,
 				C32E27941D62BEA900F1B40A /* CYExpandableTableView-master */,
-				C32E27931D62BEA900F1B40A /* Products */,
+				226C3BCB9A6EEB8AE93469F9 /* Pods */,
+				E17633B6C689B13FD8296B9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,20 +106,25 @@
 				C32E27921D62BEA900F1B40A /* CYExpandableTableView-master.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C32E27941D62BEA900F1B40A /* CYExpandableTableView-master */ = {
 			isa = PBXGroup;
 			children = (
+				C32E27C21D62C1C200F1B40A /* Extension */,
+				C32E27CC1D62C3D800F1B40A /* DefaultCellAndHeaderView */,
+				C32E27DD1D62EB1500F1B40A /* CustomCellAndHeaderView */,
 				C32E27981D62BEA900F1B40A /* AppDelegate.h */,
 				C32E27991D62BEA900F1B40A /* AppDelegate.m */,
-				C32E279B1D62BEA900F1B40A /* ViewController.h */,
-				C32E279C1D62BEA900F1B40A /* ViewController.m */,
+				C32E27D71D62C8B400F1B40A /* MainTableViewController.h */,
+				C32E27D81D62C8B400F1B40A /* MainTableViewController.m */,
 				C32E279E1D62BEA900F1B40A /* Main.storyboard */,
 				C32E27A11D62BEA900F1B40A /* Assets.xcassets */,
 				C32E27A31D62BEA900F1B40A /* LaunchScreen.storyboard */,
 				C32E27A61D62BEA900F1B40A /* Info.plist */,
 				C32E27951D62BEA900F1B40A /* Supporting Files */,
+				C32E27931D62BEA900F1B40A /* Products */,
 			);
 			path = "CYExpandableTableView-master";
 			sourceTree = "<group>";
@@ -79,6 +137,83 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C32E27AC1D62BEF800F1B40A /* CYExpandableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C32E27AD1D62BEF800F1B40A /* ClickableHeaderView.h */,
+				C32E27AE1D62BEF800F1B40A /* ClickableHeaderView.m */,
+				C32E27AF1D62BEF800F1B40A /* CustomExpandableViewProtocol.h */,
+				C32E27B01D62BEF800F1B40A /* ExpandableObjectProtocol.h */,
+				C32E27B11D62BEF800F1B40A /* CYExpandableTableView.xib */,
+				C32E27B21D62BEF800F1B40A /* CYExpandableTableViewController.h */,
+				C32E27B31D62BEF800F1B40A /* CYExpandableTableViewController.m */,
+			);
+			path = CYExpandableTableView;
+			sourceTree = "<group>";
+		};
+		C32E27C21D62C1C200F1B40A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C32E27C31D62C1C200F1B40A /* NSArray+Map.h */,
+				C32E27C41D62C1C200F1B40A /* NSArray+Map.m */,
+				C339376E1D640F7400B08577 /* UIImage+Crop.h */,
+				C339376F1D640F7400B08577 /* UIImage+Crop.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C32E27CC1D62C3D800F1B40A /* DefaultCellAndHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C32E27CD1D62C3D800F1B40A /* DataModel */,
+				C32E27D41D62C3F500F1B40A /* DefaultCellAndHeaderViewController.h */,
+				C32E27D51D62C3F500F1B40A /* DefaultCellAndHeaderViewController.m */,
+			);
+			path = DefaultCellAndHeaderView;
+			sourceTree = "<group>";
+		};
+		C32E27CD1D62C3D800F1B40A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C32E27D01D62C3D800F1B40A /* Parent.h */,
+				C32E27D11D62C3D800F1B40A /* Parent.m */,
+				C32E27CE1D62C3D800F1B40A /* Child.h */,
+				C32E27CF1D62C3D800F1B40A /* Child.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		C32E27DD1D62EB1500F1B40A /* CustomCellAndHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C32E27E41D63119100F1B40A /* DataModel */,
+				C32E27DE1D62EB4A00F1B40A /* CustomCellAndHeaderViewController.h */,
+				C32E27DF1D62EB4A00F1B40A /* CustomCellAndHeaderViewController.m */,
+				C32E27E81D631B5D00F1B40A /* CustomHeader.h */,
+				C32E27E91D631B5D00F1B40A /* CustomHeader.m */,
+			);
+			path = CustomCellAndHeaderView;
+			sourceTree = "<group>";
+		};
+		C32E27E41D63119100F1B40A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C33937591D63FF5700B08577 /* Poster.h */,
+				C339375A1D63FF5700B08577 /* Poster.m */,
+				C339375C1D63FF5E00B08577 /* Detail.h */,
+				C339375D1D63FF5E00B08577 /* Detail.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		E17633B6C689B13FD8296B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406ABBB20453BB492FAB32BA /* libPods-CYExpandableTableView-master.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C32E27A91D62BEA900F1B40A /* Build configuration list for PBXNativeTarget "CYExpandableTableView-master" */;
 			buildPhases = (
+				8CFD5B89F3DDB4ED13DFBDB5 /* [CP] Check Pods Manifest.lock */,
 				C32E278E1D62BEA900F1B40A /* Sources */,
 				C32E278F1D62BEA900F1B40A /* Frameworks */,
 				C32E27901D62BEA900F1B40A /* Resources */,
+				6F6453EC28A7150F082FE23B /* [CP] Embed Pods Frameworks */,
+				73478094E12BE6E167A4384A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +248,7 @@
 				TargetAttributes = {
 					C32E27911D62BEA900F1B40A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H4V332SS59;
 					};
 				};
 			};
@@ -139,19 +278,79 @@
 				C32E27A51D62BEA900F1B40A /* LaunchScreen.storyboard in Resources */,
 				C32E27A21D62BEA900F1B40A /* Assets.xcassets in Resources */,
 				C32E27A01D62BEA900F1B40A /* Main.storyboard in Resources */,
+				C32E27B51D62BEF800F1B40A /* CYExpandableTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F6453EC28A7150F082FE23B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYExpandableTableView-master/Pods-CYExpandableTableView-master-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73478094E12BE6E167A4384A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYExpandableTableView-master/Pods-CYExpandableTableView-master-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFD5B89F3DDB4ED13DFBDB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C32E278E1D62BEA900F1B40A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32E279D1D62BEA900F1B40A /* ViewController.m in Sources */,
+				C32E27E01D62EB4A00F1B40A /* CustomCellAndHeaderViewController.m in Sources */,
 				C32E279A1D62BEA900F1B40A /* AppDelegate.m in Sources */,
+				C32E27D61D62C3F500F1B40A /* DefaultCellAndHeaderViewController.m in Sources */,
+				C32E27B41D62BEF800F1B40A /* ClickableHeaderView.m in Sources */,
+				C339375B1D63FF5700B08577 /* Poster.m in Sources */,
+				C32E27C51D62C1C200F1B40A /* NSArray+Map.m in Sources */,
 				C32E27971D62BEA900F1B40A /* main.m in Sources */,
+				C32E27D31D62C3D800F1B40A /* Parent.m in Sources */,
+				C32E27B61D62BEF800F1B40A /* CYExpandableTableViewController.m in Sources */,
+				C32E27EA1D631B5D00F1B40A /* CustomHeader.m in Sources */,
+				C32E27D91D62C8B400F1B40A /* MainTableViewController.m in Sources */,
+				C339375E1D63FF5E00B08577 /* Detail.m in Sources */,
+				C32E27D21D62C3D800F1B40A /* Child.m in Sources */,
+				C33937701D640F7400B08577 /* UIImage+Crop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,23 +462,31 @@
 		};
 		C32E27AA1D62BEA900F1B40A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418C95E85D88E6B892813822 /* Pods-CYExpandableTableView-master.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CYExpandableTableView-master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gocy.CYExpandableTableView-master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		C32E27AB1D62BEA900F1B40A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C016AE2AEDA881499B0CE6B9 /* Pods-CYExpandableTableView-master.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CYExpandableTableView-master/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gocy.CYExpandableTableView-master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -302,6 +509,7 @@
 				C32E27AB1D62BEA900F1B40A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

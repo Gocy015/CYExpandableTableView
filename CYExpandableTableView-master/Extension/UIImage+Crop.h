@@ -1,15 +1,15 @@
 //
-//  ViewController.h
+//  UIImage+Resize.h
 //  CYExpandableTableView-master
 //
-//  Created by Gocy on 16/8/16.
+//  Created by Gocy on 16/8/17.
 //  Copyright © 2016年 Gocy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImage(Crop)
 
+-(UIImage *)cropImageInRect:(CGRect)rect;
 
 @end
-
