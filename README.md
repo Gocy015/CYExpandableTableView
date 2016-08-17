@@ -54,7 +54,7 @@ If you want to receive table view selection event ,you just have to implement `U
 
 When labels and texts cannot meet your needs ,it's time to do some customization.
 
-Everything you need is in `"CustomeExpandableViewProtocol.h"` ,implement `CustomHeaderViewDataSource` ,and the table view hands over the responsibility of constructing appearacnce of the header view to you ; Implement `CustomCellDataSource` , and you get to create your own table view cell. Of course ,you can implement both of them if you need to.
+Everything you need is in `"CustomExpandableViewProtocol.h"` ,implement `CustomHeaderViewDataSource` ,and the table view hands over the responsibility of constructing appearacnce of the header view to you ; Implement `CustomCellDataSource` , and you get to create your own table view cell. Of course ,you can implement both of them if you need to.
 
 To learn more about setting the table view's header or cell to your custom view ,I strongly recommend you to download the sample project and see the whole picture ,but basically ,you are going to do serval things.
 
