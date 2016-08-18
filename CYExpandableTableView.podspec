@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYExpandableTableView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "An expandable / collapsable table view for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Gocy015/CYExpandableTableView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/Gocy015/CYExpandableTableView.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -103,7 +103,7 @@ s.source_files  = "CYExpandableTableView/*.{h,m}"
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "CYExpandableTableView/*.xib"
+#s.resource  = "CYExpandableTableView/*.xib"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
