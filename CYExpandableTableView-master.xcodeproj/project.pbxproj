@@ -14,7 +14,6 @@
 		C32E27A21D62BEA900F1B40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32E27A11D62BEA900F1B40A /* Assets.xcassets */; };
 		C32E27A51D62BEA900F1B40A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32E27A31D62BEA900F1B40A /* LaunchScreen.storyboard */; };
 		C32E27B41D62BEF800F1B40A /* ClickableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27AE1D62BEF800F1B40A /* ClickableHeaderView.m */; };
-		C32E27B51D62BEF800F1B40A /* CYExpandableTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32E27B11D62BEF800F1B40A /* CYExpandableTableView.xib */; };
 		C32E27B61D62BEF800F1B40A /* CYExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27B31D62BEF800F1B40A /* CYExpandableTableViewController.m */; };
 		C32E27C51D62C1C200F1B40A /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27C41D62C1C200F1B40A /* NSArray+Map.m */; };
 		C32E27D21D62C3D800F1B40A /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E27CF1D62C3D800F1B40A /* Child.m */; };
@@ -44,7 +43,6 @@
 		C32E27AE1D62BEF800F1B40A /* ClickableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableHeaderView.m; sourceTree = "<group>"; };
 		C32E27AF1D62BEF800F1B40A /* CustomExpandableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomExpandableViewProtocol.h; sourceTree = "<group>"; };
 		C32E27B01D62BEF800F1B40A /* ExpandableObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableObjectProtocol.h; sourceTree = "<group>"; };
-		C32E27B11D62BEF800F1B40A /* CYExpandableTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYExpandableTableView.xib; sourceTree = "<group>"; };
 		C32E27B21D62BEF800F1B40A /* CYExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYExpandableTableViewController.h; sourceTree = "<group>"; };
 		C32E27B31D62BEF800F1B40A /* CYExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYExpandableTableViewController.m; sourceTree = "<group>"; };
 		C32E27C31D62C1C200F1B40A /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				C32E27AE1D62BEF800F1B40A /* ClickableHeaderView.m */,
 				C32E27AF1D62BEF800F1B40A /* CustomExpandableViewProtocol.h */,
 				C32E27B01D62BEF800F1B40A /* ExpandableObjectProtocol.h */,
-				C32E27B11D62BEF800F1B40A /* CYExpandableTableView.xib */,
 				C32E27B21D62BEF800F1B40A /* CYExpandableTableViewController.h */,
 				C32E27B31D62BEF800F1B40A /* CYExpandableTableViewController.m */,
 			);
@@ -278,7 +275,6 @@
 				C32E27A51D62BEA900F1B40A /* LaunchScreen.storyboard in Resources */,
 				C32E27A21D62BEA900F1B40A /* Assets.xcassets in Resources */,
 				C32E27A01D62BEA900F1B40A /* Main.storyboard in Resources */,
-				C32E27B51D62BEF800F1B40A /* CYExpandableTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

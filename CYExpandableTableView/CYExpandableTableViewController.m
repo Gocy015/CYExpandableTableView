@@ -36,6 +36,7 @@ static CGFloat headerHeight = 40.0f;
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    [self constructTableView];
     
     self.headerSeperatorHeight = 6;
     
@@ -62,6 +63,19 @@ static CGFloat headerHeight = 40.0f;
     NSLog(@"CYExpandableTableView Dealloc");
 }
 
+
+#pragma mark - Helpers
+
+-(void)constructTableView{
+    UITableView *tableView = [UITableView new];
+    self.tableView = tableView;
+    
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    
+    [self.view addSubview:tableView];
+    
+}
 
 
 #pragma mark - UITableView Deleagate
@@ -247,6 +261,8 @@ static CGFloat headerHeight = 40.0f;
     }
 }
 
-
+-(void)viewDidLayoutSubviews{
+    self.tableView.frame = self.view.bounds;
+}
 
 @end
