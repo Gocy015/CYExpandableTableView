@@ -21,7 +21,7 @@
 #define RANDOM_COLOR() \
 [UIColor colorWithRed:(arc4random() % 255 / 255.0) green:(arc4random() % 255 / 255.0) blue:(arc4random() % 255 / 255.0) alpha:1]
 
-@interface CustomCellAndHeaderViewController () <CustomHeaderViewDataSource ,CustomCellDataSource ,UITableViewDelegate>
+@interface CustomCellAndHeaderViewController () <CustomHeaderViewDataSource ,CustomCellDataSource ,ExpandableTableViewEventDelegate>
 
 @property (nonatomic ,weak) UIView *tableView;
 @property (nonatomic ,strong) NSMutableArray *posters;
@@ -70,7 +70,7 @@ static NSString * const cellReuseId = @"CustomeCell";
     
     tbvc.headerViewDataSource = self;
     tbvc.cellDataSource = self;
-    tbvc.tableViewDelegate = self;
+    tbvc.eventDelegate = self;
     
     tbvc.headerSeperatorColor = [UIColor whiteColor];
     tbvc.headerSeperatorHeight = 12;
@@ -182,10 +182,14 @@ static NSString * const cellReuseId = @"CustomeCell";
 }
 
 
-#pragma mark - TableView Delegate
+#pragma mark - ExpandableTableView Event Delegate
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"tableView did select , row : %li , sec : %li",indexPath.row,indexPath.section);
+}
+
+-(void)didSelectHeaderAnIndex:(NSUInteger)index{
+    NSLog(@"tableView did select header at index : %lu",index);
 }
 
 @end

@@ -7,10 +7,10 @@
 //
 
 #import "CYExpandableTableViewController.h"
-#import "ClickableHeaderView.h" 
+#import "ClickableHeaderView.h"
 
 static NSString *const cellReuseId = @"secondaryCell";
-static NSString *const headerReusedId = @"clickableHeader"; 
+static NSString *const headerReusedId = @"clickableHeader";
 static CGFloat headerHeight = 40.0f;
 
 @interface CYExpandableTableViewController () <UITableViewDelegate ,UITableViewDataSource ,ClickableHeaderDelegate>
@@ -83,11 +83,16 @@ static CGFloat headerHeight = 40.0f;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (self.tableViewDelegate) {
-        [self.tableViewDelegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+    if (self.eventDelegate && [self.eventDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+        [self.eventDelegate tableView:tableView didSelectRowAtIndexPath:indexPath];
     }
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.eventDelegate && [self.eventDelegate respondsToSelector:@selector(scrollViewDidScroll:)]) {
+        [self.eventDelegate scrollViewDidScroll:scrollView];
+    }
+}
 
 #pragma mark - UITableView DataSource
 
@@ -166,7 +171,7 @@ static CGFloat headerHeight = 40.0f;
     
     
     return header;
-//    return nil;
+    //    return nil;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -183,7 +188,7 @@ static CGFloat headerHeight = 40.0f;
     
     return cell;
     
-//    return nil;
+    //    return nil;
 }
 
 
@@ -242,13 +247,24 @@ static CGFloat headerHeight = 40.0f;
         [self.tableView endUpdates];
         _lastSelectedSection = -1;
     }
+    
+    if(self.eventDelegate && [self.eventDelegate respondsToSelector:@selector(didSelectHeaderAnIndex:)]){
+        [self.eventDelegate didSelectHeaderAnIndex:headerView.section];
+    }
 }
 
 
 #pragma mark - Setters
 
 -(void)setData:(NSArray<id<ExpandableObject>> *)data{
+    
+    if (!_allowsMutipleSelection && _lastSelectedSection >= 0) {
+        id <ExpandableObject> objToClose = _data[_lastSelectedSection];
+        [objToClose setOpened: NO];
+    }
+    
     _data = data;
+    _lastSelectedSection = -1;
     if (self.tableView) {
         [self.tableView reloadData];
     }

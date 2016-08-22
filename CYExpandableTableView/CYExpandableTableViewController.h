@@ -10,6 +10,12 @@
 #import "ExpandableObjectProtocol.h"
 #import "CustomExpandableViewProtocol.h"
 
+@protocol ExpandableTableViewEventDelegate <UITableViewDelegate>
+
+-(void)didSelectHeaderAnIndex:(NSUInteger)index;
+
+@end
+
 @interface CYExpandableTableViewController : UIViewController
 
 @property (nonatomic ,strong) NSArray <id<ExpandableObject>>*data;
@@ -23,7 +29,7 @@
 
 @property (nonatomic ,weak) id <CustomHeaderViewDataSource> headerViewDataSource;
 @property (nonatomic ,weak) id <CustomCellDataSource> cellDataSource;
-@property (nonatomic ,weak) id <UITableViewDelegate> tableViewDelegate;
+@property (nonatomic ,weak) id <ExpandableTableViewEventDelegate> eventDelegate;
 
 @property (nonatomic) BOOL allowsMutipleSelection;
 

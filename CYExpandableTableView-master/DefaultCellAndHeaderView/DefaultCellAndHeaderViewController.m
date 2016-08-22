@@ -11,7 +11,7 @@
 #import "Child.h"
 #import "CYExpandableTableViewController.h"
 
-@interface DefaultCellAndHeaderViewController () <UITableViewDelegate>
+@interface DefaultCellAndHeaderViewController () <ExpandableTableViewEventDelegate>
 
 @property (nonatomic ,strong) NSMutableArray *parents;
 @property (nonatomic ,weak) UIView *tableView;
@@ -53,7 +53,7 @@
 //    tbvc.normalHeaderFillColor = [UIColor blackColor];
 //    tbvc.normalHeaderTextColor = [UIColor whiteColor];
     
-    tbvc.tableViewDelegate = self;
+    tbvc.eventDelegate = self;
     
     tbvc.data = [NSArray arrayWithArray:self.parents];;
     
@@ -105,10 +105,15 @@
 }
 
 
-#pragma mark - UITableView Delegate
+#pragma mark - ExpandableTableView Event Delegate
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"tableView did select , row : %lu , sec : %lu" ,indexPath.row,indexPath.section);
+}
+
+
+-(void)didSelectHeaderAnIndex:(NSUInteger)index{
+    NSLog(@"tableView did select header at index : %lu",index);
 }
 
 @end
