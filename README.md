@@ -36,6 +36,10 @@ You can also download or clone the project ,and drag the entire 'CYExpandableTab
 
 Either way ,you are now ready to go :)
 
+### Update
+#### Version 0.0.2 
+Change property `tableViewDelegate` to `eventDelegate` ,add new protocol `ExpandableTableViewEventDelegate` ,please use this to handle UITableView's delegate methods from now on.
+
 
 ### Usage
 
